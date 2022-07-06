@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+
+<body>
+    <div class="main">
+        
+            <img class="img" src="./assests/javascript.jpg" alt="">
+            <table>
+                <tr>
+                    <td>Find</td>
+                    <td><input id="find" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Replace</td>
+                    <td><input id="replacement" type="text"></td>
+                </tr>
+            </table>
+
+        <input type="button" value="Find"
+            onclick="findMyText(document.querySelector('#find').value, document.getElementById('replacement').value);">
+        <div id="haystack"></div>
+        <br>
+    </div>
+
+    <script src="./assests/index.js"></script>
+</body>
+
+</html>
